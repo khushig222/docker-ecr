@@ -6,7 +6,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: web-app.local
+  - host: www.khushi-garg.com
     http:
       paths:
       - path: /
