@@ -31,6 +31,8 @@ pipeline {
                 withKubeConfig([credentialsId: 'kube-config']) {
                     sh 'kubectl apply -f k8s-deployment.yml'
                     sh 'kubectl apply -f k8s-service.yml'
+                    sh 'kubectl apply -f k8s-autoscaling.yml'
+                    sh 'kubectl apply -f ingress.yml'
                 }
             }
         }
